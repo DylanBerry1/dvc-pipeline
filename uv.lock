@@ -769,6 +769,7 @@ name = "dvc-pipeline"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "dvc" },
     { name = "marimo" },
     { name = "matplotlib" },
     { name = "numpy" },
@@ -782,6 +783,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dvc", specifier = ">=3.67.1" },
     { name = "marimo", specifier = ">=0.23.6" },
     { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "numpy", specifier = ">=2.4.6" },
