@@ -1,5 +1,6 @@
 import pandas as pd
 from dateutil import parser
+import os
 
 weekday_translator = {
 	0:'Monday',

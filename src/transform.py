@@ -1,5 +1,6 @@
 import pandas as pd
 from dateutil import parser
+import os
 
 print('Beginning data transformation')
 os.makedirs("data/transformed", exist_ok=True)
