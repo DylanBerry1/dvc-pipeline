@@ -19,4 +19,4 @@ def norm_timestamp(timestamp):
 df['timestamp'] = df['timestamp'].apply(norm_timestamp)
 	
 
-df.to_csv("data/clean/events.csv")
+df.to_csv("data/clean/events.csv", index=False)
