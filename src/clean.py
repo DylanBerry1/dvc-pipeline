@@ -15,6 +15,11 @@ df = df[(df['event_type'] == 'click') | (df['event_type'] == 'login')\
 
 df = df[df['duration_seconds'] >= 0]
 
+def integerize(num):
+	return int(num)
+	
+df['duration_seconds'] = df['duration_seconds'].apply(integerize)
+
 def norm_timestamp(timestamp):
 	time = parser.parse(timestamp)
 	return time.strftime("%Y-%m-%dT%H:%M:%S")
