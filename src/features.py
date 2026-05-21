@@ -12,6 +12,8 @@ weekday_translator = {
 }
 
 print('Beginning data feature extraction')
+os.makedirs("data/features", exist_ok=True)
+
 df = pd.read_csv('data/transformed/events.csv')
 
 def sec_to_min(seconds):

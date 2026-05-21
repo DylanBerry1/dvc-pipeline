@@ -2,6 +2,7 @@ import pandas as pd
 from dateutil import parser
 
 print('Beginning data transformation')
+os.makedirs("data/transformed", exist_ok=True)
 df = pd.read_csv('data/clean/events.csv')
 
 
