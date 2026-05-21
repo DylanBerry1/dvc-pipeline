@@ -13,7 +13,7 @@ df = df[(df['event_type'] == 'click') | (df['event_type'] == 'login')\
 		| (df['event_type'] == 'scroll') | (df['event_type'] == 'purchase') |\
 		(df['event_type'] == 'view')]
 
-df = df[df['duration_seconds'] >= 0]
+df = df[df['duration_seconds'] > 0]
 
 def integerize(num):
 	return int(num)
